@@ -1,0 +1,22 @@
+
+LOGIN of a user is found    19-08-2022 15:42:49
+
+
+A new account is created    19-08-2022 15:43:11
+Savings bank Account ( 1000000004 ) of SBI Details are displayed 19-08-2022 15:43:21
+All the savings bank accouncts of SBI are displayed    19-08-2022 15:43:25
+50000 is deposited to the Savings bank Account ( 1000000004 )    19-08-2022 15:43:39
+90000 is withdrawed from the Savings bank Account ( 1000000004 )   19-08-2022 15:44:01
+Transaction history of the Savings bank Account ( 1000000004 ) is displayed    19-08-2022 15:44:13
+
+LOGOUT of the user is found    19-08-2022 15:44:18
+
+
+
+LOGIN of a user is found    19-08-2022 15:47:03
+
+
+
+LOGOUT of the user is found    19-08-2022 15:47:08
+
+

@@ -10,6 +10,11 @@ namespace BankRepositary
 {
     public class BankRepositary : IBankRepositary
     {
+        //static FileStream fs = new FileStream("SBI_File.txt", FileMode.Append, FileAccess.Write);
+        //StreamWriter sw = new StreamWriter(fs);
+
+        
+
         List<SBAccount> SBAccounts = new List<SBAccount>();
         List<SBTransaction> SBTransactions = new List<SBTransaction>();
         static int Count1 =Count_deposits() + 1;
@@ -110,8 +115,12 @@ namespace BankRepositary
 
             else
             {
+                
 
                 return sql_GetAllAccounts();
+
+               // sw.WriteLine("All the savings bank accouncts of SBI are displayed " + DateTime.Now);
+                
             }
 
             //return SBAccounts_temp;
@@ -242,6 +251,11 @@ namespace BankRepositary
 
                 //SBAccounts.Add(new SBAccount(A_no, C_name, C_address, C_balance));
                 Console.WriteLine("\n\n\n\n\n\n            Your Account is created ......Thank You for choosing SBI......\n");
+
+                
+                //sw.WriteLine(" New account is created ("  + A_no  +") " + DateTime.Now);
+                
+
             } while (sbacc_creation==0);
             
         }

@@ -17,6 +17,11 @@ namespace BankRepositary
 
             IBankRepositary bankRepositary = new BankRepositary();
 
+            FileStream fs = new FileStream("SBI_File.txt", FileMode.Append, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine("\nLOGIN of a user is found    " + DateTime.Now + "\n");
+            
+
             do
             {
                 Console.WriteLine("\n Choose anyone below: \n\t1.Create new Account \n\t2.Get account details \n\t3.Display all Account details \n\t4.Deposit \n\t5.Withdraw \n\t6.Display transaction details \n\t7.exit  \n\n Please enter your choice .......");
@@ -27,16 +32,17 @@ namespace BankRepositary
                         {
                             SBAccount sBAccount = new SBAccount();
                             bankRepositary.NewAccount(sBAccount);
+                            sw.WriteLine("A new account is created    " + DateTime.Now);
                             break;
                         }
                     case 2:
                         {
                             int retry = 1;
-
+                            long accno = 0;
                             do
                             {
                                 Console.WriteLine(" Please enter the Account number ");
-                                long accno=0;
+                                accno=0;
 
 
                                 try
@@ -73,6 +79,9 @@ namespace BankRepositary
                                 else
                                 {
                                     bankRepositary.GetAccountDetails(accno);
+
+                                    sw.WriteLine("Savings bank Account ( " + accno + " ) of SBI Details are displayed " + DateTime.Now);
+
                                     retry = 0;
                                 }
 
@@ -83,7 +92,7 @@ namespace BankRepositary
 
                             } while (retry == 1);
 
-
+                            
                             break;
                         }
                     case 3:
@@ -102,7 +111,7 @@ namespace BankRepositary
                                 }
                             }
 
-
+                            sw.WriteLine("All the savings bank accouncts of SBI are displayed    " + DateTime.Now);
                             break;
                         }
                     case 4:
@@ -110,11 +119,12 @@ namespace BankRepositary
                             transactions_count = transactions_count + 1;
 
                             int retry = 1;
-
+                            long accno = 0;
+                            decimal amt = 0;
                             do
                             {
                                 Console.WriteLine(" Please enter the Account number ");
-                                long accno = 0;
+                                accno = 0;
 
                                 try
                                 {
@@ -152,7 +162,7 @@ namespace BankRepositary
                                 {
 
                                     Console.WriteLine(" Please enter the Amount ");
-                                    decimal amt = 0;
+                                    amt = 0;
 
                                     try
                                     {
@@ -207,11 +217,14 @@ namespace BankRepositary
                                     }
 
                                     bankRepositary.DepositAmount(accno, amt);
+
+                                    sw.WriteLine(amt + " is deposited to the Savings bank Account ( " + accno + " )    " + DateTime.Now);
+
                                     retry = 0;
                                 }
                             } while (retry == 1);
 
-
+                            
                             break;
                         }
                     case 5:
@@ -314,6 +327,9 @@ namespace BankRepositary
                                     }
 
                                     bankRepositary.WithdrawAmount(accno, amt);
+
+                                    sw.WriteLine(amt + " is withdrawed from the Savings bank Account ( " + accno + " )   " + DateTime.Now);
+
                                     retry = 0;
                                 }
                             } while (retry == 1);
@@ -394,7 +410,7 @@ namespace BankRepositary
                                 }
                             }
 
-
+                            sw.WriteLine("Transaction history of the Savings bank Account ( " + accno + " ) is displayed    " + DateTime.Now);
 
                             break;
 
@@ -402,7 +418,7 @@ namespace BankRepositary
                     case 7:
 
                         {
-
+                            sw.WriteLine("\nLOGOUT of the user is found    " + DateTime.Now + "\n\n");
                             break;
                         }
                     default:
@@ -421,6 +437,9 @@ namespace BankRepositary
 
             Console.WriteLine("\n.......................... Thank You... Visit Again...\n ..........................STATE BANK OF INDIA..... ");
 
+
+            sw.Flush();
+            fs.Close();
         }
     }
 }

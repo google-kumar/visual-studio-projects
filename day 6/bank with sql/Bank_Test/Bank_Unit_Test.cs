@@ -118,7 +118,7 @@ namespace Bank_Test
             SBTransactions_client1 = obj.sql_GetTransactions();
             obj.DepositAmount(1000000003, 500);
             SBTransactions_client2 = obj.sql_GetTransactions();
-            Assert.AreEqual(SBTransactions_client1.Count, SBTransactions_client2.Count);
+            Assert.AreEqual(SBTransactions_client1.Count + 1 , SBTransactions_client2.Count);
         }
 
 
