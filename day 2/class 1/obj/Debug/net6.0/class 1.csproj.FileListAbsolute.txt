@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.AssemblyInfo.cs
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\bin\Debug\net6.0\class 1.exe
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\bin\Debug\net6.0\class 1.deps.json
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\bin\Debug\net6.0\class 1.runtimeconfig.json
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\bin\Debug\net6.0\class 1.dll
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\bin\Debug\net6.0\class 1.pdb
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.dll
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\refint\class 1.dll
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.pdb
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\class 1.genruntimeconfig.cache
+C:\Users\Admin\Desktop\visual studio\console app\day 2\class 1\obj\Debug\net6.0\ref\class 1.dll
