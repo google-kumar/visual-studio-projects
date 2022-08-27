@@ -5,7 +5,7 @@ namespace project_sample_1
 
     internal class Classwork_ques2
     {
-        public static void main()
+        public static void Main()
         {
             
             Console.WriteLine("enter your dob \n");

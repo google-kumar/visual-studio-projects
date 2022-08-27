@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using BankLibrary;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 
 
@@ -172,11 +173,13 @@ namespace BankRepositary
                 Console.WriteLine(" \n Please enter Customer Name ");
                 string C_name = Console.ReadLine();
 
-                if (C_name.All(char.IsDigit) == true)
+                Regex r = new Regex("^[a-zA-Z ]+$");
+               
+                if(r.IsMatch(C_name) == false )
                 { 
                      Console.WriteLine("\n\n    Your name should not contain numbers......\n      Please enter a valid name");
                      C_name = Console.ReadLine();
-                    if (C_name.All(char.IsDigit) == true)
+                    if (r.IsMatch(C_name) == false)
                     {
                         Console.WriteLine("\n Your input is not Valid...Please try after some times.......");
                         break;

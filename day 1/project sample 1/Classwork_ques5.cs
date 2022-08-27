@@ -6,7 +6,7 @@ namespace project_sample_1
     internal class Classwork_ques5
     {
         
-        public static void Main()
+        public static void main()
         {
             void display(int n)
             {

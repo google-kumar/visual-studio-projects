@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\bin\Debug\net6.0\Clinic_Management_System.deps.json
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\bin\Debug\net6.0\Clinic_Management_System.dll
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\bin\Debug\net6.0\Clinic_Management_System.pdb
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.AssemblyInfo.cs
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.dll
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\refint\Clinic_Management_System.dll
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\Clinic_Management_System.pdb
+C:\Users\Admin\Desktop\visual studio\console app\Clinic Management System\Clinic_Management_System_Library\obj\Debug\net6.0\ref\Clinic_Management_System.dll
