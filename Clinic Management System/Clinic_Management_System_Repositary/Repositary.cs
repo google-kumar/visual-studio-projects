@@ -329,7 +329,7 @@ namespace Repositary
                 int flag = 0;                                  //It set flag to identify whether appointment data is found on the databsae
                 while (dr.Read()) //number of rows
                 {
-                    if ((string)dr[0] == PatientID && (string)dr[4] == Visitdate)
+                    if (((string)dr[0] == PatientID) && ((string)dr[4] == Visitdate))
                     { 
                         Console.WriteLine(count++ + "." + "\tAppointmentTime: " + (string)dr[5]);
                         flag = 1;
@@ -597,6 +597,7 @@ namespace Repositary
 
 
                     int count3=1,Dateselection=0;
+                    int LoopStart_Firsttime = 1;
 
                     int flagout;
                     do
@@ -604,6 +605,27 @@ namespace Repositary
                         flagout = 0;
 
                         Console.WriteLine(" Please enter Date of Visit ....... {DD/MM/YEAR}      Ex: 12/12/2000 ");
+
+
+                        //Option is provided here to quit to Home menu if the Visiting date is not suitable to the user
+                        
+                        if(LoopStart_Firsttime==0)
+                        {
+                            Console.WriteLine("Please Enter 1 to continue or anyother number to quit....");
+                            try
+                            {
+                                flagout = Convert.ToInt32(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+                                Console.WriteLine("Invalid choice.....Please Try After sometimes...");
+                                break;
+                            }
+                            
+                        }
+
+                        
+
 
 
                         try
@@ -653,15 +675,29 @@ namespace Repositary
                         if (count4 == 7)
                         {
                             Console.WriteLine("All slots are booked.. Please choose a different Date...");
+
+                            Console.WriteLine("Please Enter 1 to choose a different date ....");
+                            try
+                            {
+                                flagout = Convert.ToInt32(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+                                Console.WriteLine("Invalid choice.....Please Try After sometimes...");
+                                break;
+                            }
+
+                            continue;
                         }
                         else
                             Dateselection = 1;
 
 
 
-                        //Option is provided here to quit to Home menu if the Visiting date is not suitable to the user
 
-                        Console.WriteLine("Please Enter 1 to continue ....");
+                        LoopStart_Firsttime = 0;
+
+                        Console.WriteLine("Please Enter 1 to choose a time slot ....");
                         try
                         {
                             flagout = Convert.ToInt32(Console.ReadLine());
@@ -671,7 +707,6 @@ namespace Repositary
                             Console.WriteLine("Invalid choice.....Please Try After sometimes...");
                             break;
                         }
-
 
 
 
@@ -739,6 +774,28 @@ namespace Repositary
                             break;
                         else 
                         {
+                            //to check if the patient has appointment with an other doctor at the same time
+                            int Breaks = 0;
+                            con = getcon();
+                            cmd = new SqlCommand("Select * from Appointment_Details where  PatientID=@PatientID and VisitDate=@VisitDate and AppointmentTime=@AppointmentTime"); // defined in a sql query
+                            cmd.Connection = con;
+                            cmd.Parameters.AddWithValue("@PatientID", PatientID);
+                            cmd.Parameters.AddWithValue("@VisitDate", VisitDate);
+                            cmd.Parameters.AddWithValue("@AppointmentTime", AppointmentTime);
+                            dr = cmd.ExecuteReader();
+
+                            while (dr.Read()) //number of rows
+                            {
+                                Breaks = 1;
+                            }
+
+                            if (Breaks == 1)
+                            { 
+                                 Console.WriteLine("\n Sorry, The patient already has an appointment at this time with an other doctor \n");
+                                 break;
+                            }
+
+
 
                             //if everything is good to go, the appointment is booked and added in the database here
 
@@ -791,7 +848,7 @@ namespace Repositary
                 Console.WriteLine(count++ + "......\n" + "\tDoctor ID: " + (string)dr[0] + "\n\tFirst Name: " + (string)dr[1] + "\n\tLast Name: " + (string)dr[2] + "\n\tSex: " + (string)dr[3] + "\n\tSpecialization: " + (string)dr[4] + "\n\tVisiting Hours From: " + (string)dr[5] + "\n\t                To: " + (string)dr[6] + "\n");
 
             }
-            if (count == 2)
+            if (count == 1)
                 Console.WriteLine("No Doctors Available at this time.......");
         }
 
