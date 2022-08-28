@@ -445,8 +445,13 @@ namespace Repositary
 
                             Console.WriteLine("\n\n\n\n\n\n            Patient Appointment is Cancelled  ......\n");
                         }
-                            
-                        count2++;
+                        if ((string)dr[0] == PatientID && (string)dr[4] == Visitdate)
+                        {
+                            count2++;
+                        }
+
+
+                        
                     }
                 }
                 else
