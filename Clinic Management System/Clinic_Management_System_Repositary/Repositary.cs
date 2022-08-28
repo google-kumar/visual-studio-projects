@@ -313,7 +313,52 @@ namespace Repositary
 
                 }
 
-                
+                //Logic to ensure whether the entered date is yet to come
+
+                string visitdate2 = VisitDate.ToShortDateString();
+
+                var parameterDate = DateTime.ParseExact(visitdate2, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                var todaysDate = DateTime.Today;
+
+                if (parameterDate < todaysDate)
+                {
+                    Console.WriteLine("\n\n Entered date is meaningless, as Date and Time Now:  " + DateTime.Now);
+                    Console.WriteLine("Please enter a valid date  ");
+
+                    try
+                    {
+                        VisitDate = Convert.ToDateTime(Console.ReadLine());
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine(" It is not Valid , Please enter Date of visit in the format....... {DD/MM/YEAR}      Ex: 12/12/2000");
+                        try
+                        {
+                            VisitDate = Convert.ToDateTime(Console.ReadLine()); //  
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine("\n your input is not valid . Try again after sometimes.....");
+
+                            break;
+                        }
+
+                    }
+
+                    visitdate2 = VisitDate.ToShortDateString();
+
+                    parameterDate = DateTime.ParseExact(visitdate2, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                    todaysDate = DateTime.Today;
+
+                    if (parameterDate < todaysDate)
+                    {
+                        Console.WriteLine("\n\n Entered date is meaningless, as Date and Time Now:  " + DateTime.Now);
+                        Console.WriteLine("Please try after some times ");
+                        break;
+                    }
+                }
+
+
                 //checks whether Appoinment is found in the database,if yes shows all the appointments,else return to Home menu
 
 
@@ -648,6 +693,52 @@ namespace Repositary
 
                         }
 
+                        //Logic to ensure whether the entered date is yet to come
+
+                        
+                        string visitdate2 = Visitdate.ToShortDateString();
+
+                        var parameterDate = DateTime.ParseExact(visitdate2, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                        var todaysDate = DateTime.Today;
+
+                        if (parameterDate < todaysDate)
+                        {
+                            Console.WriteLine("\n\n Entered date is meaningless, as Date and Time Now:  " + DateTime.Now);
+                            Console.WriteLine("Please enter a valid date  ");
+
+                            try
+                            {
+                                Visitdate = Convert.ToDateTime(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+                                Console.WriteLine(" It is not Valid , Please enter Date of visit in the format....... {DD/MM/YEAR}      Ex: 12/12/2000");
+                                try
+                                {
+                                    Visitdate = Convert.ToDateTime(Console.ReadLine()); //  
+                                }
+                                catch (FormatException)
+                                {
+                                    Console.WriteLine("\n your input is not valid . Try again after sometimes.....");
+
+                                    break;
+                                }
+
+                            }
+
+                            visitdate2 = Visitdate.ToShortDateString();
+
+                            parameterDate = DateTime.ParseExact(visitdate2, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+                            todaysDate = DateTime.Today;
+
+                            if (parameterDate < todaysDate)
+                            {
+                                Console.WriteLine("\n\n Entered date is meaningless, as Date and Time Now:  " + DateTime.Now);
+                                Console.WriteLine("Please try after some times ");
+                                break;
+                            }
+                        }
+
                         VisitDate = Visitdate.ToShortDateString();
 
                         Console.WriteLine("\n Applicable Slots of the day for the mentioned Doctor\n");
@@ -774,7 +865,7 @@ namespace Repositary
                             break;
                         else 
                         {
-                            //to check if the patient has appointment with an other doctor at the same time
+                            //to check if the patient has an appointment with an other doctor at the same time
                             int Breaks = 0;
                             con = getcon();
                             cmd = new SqlCommand("Select * from Appointment_Details where  PatientID=@PatientID and VisitDate=@VisitDate and AppointmentTime=@AppointmentTime"); // defined in a sql query
