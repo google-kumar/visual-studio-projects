@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVC_EF_eg.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@*<p>Hello @ViewBag.username</p>
+<p> <a asp-controller="Login" asp-action="Logout"> Logout </a> </p>*@
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TuitorNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TuitorNavigation.TuitorName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RollNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RollNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RollNo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    ViewBag is a dynamic property and viewdata holds an object datatype
+*@
+@{
+    ViewData["CompanyName"] = "Eurofins";
+    ViewBag.marks = 100;
+
+    ViewData["Name"] = "Vishnu";
+}
+<h1> Sample page</h1>
+<h2> My Company Name is @ViewData["CompanyName"]</h2>
+<h3> Marks: @ViewBag.marks</h3>
+<hr />
+<hr />
+<h2> My company name is @ViewBag.CompanyName</h2>
+<h3> Marks: @ViewData["marks"]</h3>
+<hr />
+<hr />
+<h1> @ViewData["Name"] from @ViewBag.dept department from @ViewBag.College college scored @ViewData["marks"] marks.... </h1>
+<h1>hi</h1>

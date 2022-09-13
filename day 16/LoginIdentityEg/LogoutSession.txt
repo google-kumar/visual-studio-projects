@@ -1,0 +1,15 @@
+startup.cs
+services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+//services.AddSession(s => s.IdleTimeout = TimeSpan.FromMinutes(30));
+
+LoginPartial.cs
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<ul class="navbar-nav">
+    @{ 
+        ViewBag.Data = @HttpContextAccessor.HttpContext.Session.GetString("email");
+    }
+    @if (ViewBag.Data!=null)
+    {
+    }

@@ -1,0 +1,36 @@
+﻿@model first_MVC_App.Models.pen
+
+@{
+    ViewData["Title"] = "More Details";
+}
+
+<h1>More Details</h1>
+
+<div>
+    <h4>pen</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.penId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.penId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.penName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.penName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.penPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.penPrice)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Modify Pen", "Edit", new { id = Model.penId }) |
+    <a asp-action="penDetailss">Back to List</a>
+</div>
