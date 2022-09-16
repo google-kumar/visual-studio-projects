@@ -1,0 +1,164 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sri_Arungarai_Amman_Traders
+build_property.RootNamespace = Sri_Arungarai_Amman_Traders
+build_property.ProjectDir = C:\Users\Admin\Desktop\visual studio\console app\Sri_Arungarai_Amman_Traders\VisualStudio\Sri_Arungarai_Amman_Traders\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\visual studio\console app\Sri_Arungarai_Amman_Traders\VisualStudio\Sri_Arungarai_Amman_Traders
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/AdminLogin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpblxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/AdminLogin/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpblxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/BillsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmlsbHNDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/BillsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQmlsbHNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/ChemicalsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlbWljYWxzQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/ChemicalsDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlbWljYWxzRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/ChemicalsEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlbWljYWxzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/ChemicalsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hlbWljYWxzSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/FertilizersCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmVydGlsaXplcnNDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/FertilizersDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmVydGlsaXplcnNEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/FertilizersEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmVydGlsaXplcnNFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/FertilizersIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmVydGlsaXplcnNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/SeedsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VlZHNDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/SeedsDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VlZHNEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/SeedsEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VlZHNFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Admin/SeedsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VlZHNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/AdminLoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTG9naW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFVzZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/UserLoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFVzZXJMb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Sri_Arungarai_Amman_Traders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3JpX0FydW5nYXJhaV9BbW1hbl9UcmFkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Sri_Arungarai_Amman_Traders/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3JpX0FydW5nYXJhaV9BbW1hbl9UcmFkZXJzXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/UserLogin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckxvZ2luXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/UserLogin/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckxvZ2luXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/BillsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCaWxsc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/BillssIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCaWxsc3NJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/ChemicalsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGVtaWNhbHNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/FertilizersIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGZXJ0aWxpemVyc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/User/SeedsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZWVkc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/visual studio/console app/Sri_Arungarai_Amman_Traders/VisualStudio/Sri_Arungarai_Amman_Traders/Views/Shared/Sri_Arungarai_Amman_TradersLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNyaV9BcnVuZ2FyYWlfQW1tYW5fVHJhZGVyc0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-7e8187ca0z

@@ -1,0 +1,69 @@
+﻿@model Sri_Arungarai_Amman_Traders.Models.Bill
+
+@{
+    ViewData["Title"] = "BillsCreate";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+
+<h1>New Bill</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="BillsCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="BillNo" class="control-label"></label>
+                <input asp-for="BillNo" class="form-control" />
+                <span asp-validation-for="BillNo" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="BillDate" class="control-label"></label>
+                <input asp-for="BillDate" class="form-control" />
+                <span asp-validation-for="BillDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            @{
+                ViewBag.crimeRef = ViewBag.BillAmount;
+            }
+            <div class="form-group">
+                <label asp-for="BillAmount" class="control-label"></label>
+                <input asp-for="BillAmount"  value=@TempData["BillAmount"] disabled class="form-control" />
+                <span asp-validation-for="BillAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BillPaid" class="control-label"></label>
+                <input asp-for="BillPaid" class="form-control" />
+                <span asp-validation-for="BillPaid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Done" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

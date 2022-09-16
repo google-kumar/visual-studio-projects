@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Sri Arungarai Amman Traders</h1>
+        <p> <a asp-controller="Admin" asp-action="SeedsIndex">Available Seed Products</a>.</p>
+        <p> <a asp-controller="Admin" asp-action="FertilizersIndex">Available Fertilizer Products</a>.</p>
+        <p> <a asp-controller="Admin" asp-action="ChemicalsIndex">Available Chemical Products</a>.</p>
+        <p> <a asp-controller="Admin" asp-action="BillsIndex">View Bills</a>.</p>
+        <p> <a asp-controller="Admin" asp-action="Billing">New Bill</a>.</p>
+    </div>

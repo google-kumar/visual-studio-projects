@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Sri_Arungarai_Amman_Traders.Models.Bill>
+
+@{
+    ViewData["Title"] = "Bills";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Bills</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BillNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPaid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillPaid)
+            </td>
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.BillNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BillNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BillNo">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Sri_Arungarai_Amman_Traders.Models.Bill>
+
+@{
+    ViewData["Title"] = "My Bill";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h1>My Bill</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BillDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPaid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillPaid)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/Sri_Arungarai_Amman_TradersLayout.cshtml";
+}
+
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Go to <a asp-controller="AdminLogin" asp-action="Login">Admin Login</a>.</p>
+    <p>Go to <a asp-controller="UserLogin" asp-action="Login">User Login</a>.</p>
+</div>

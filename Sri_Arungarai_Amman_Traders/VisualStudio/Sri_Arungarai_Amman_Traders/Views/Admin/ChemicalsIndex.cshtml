@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Sri_Arungarai_Amman_Traders.Models.Chemical>
+
+@{
+    ViewData["Title"] = "Chemicals";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Chemical Product Details</h1>
+
+<p>
+    <a asp-action="ChemicalsCreate">Add a New Chemical Product</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantityAvailable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantityAvailable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                <a asp-action="ChemicalsEdit" asp-route-id="@item.ProductId">Edit</a> |
+                
+                <a asp-action="ChemicalsDelete" asp-route-id="@item.ProductId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,105 @@
+﻿@model Sri_Arungarai_Amman_Traders.Models.Billing
+@{  
+    ViewBag.Title = "Billing";  
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+} 
+@*@{
+    var selectList = new SelectList(
+        new List<SelectListItem>
+        {
+            new SelectListItem {Text = "Google", Value = "Google"},
+            new SelectListItem {Text = "Other", Value = "Other"},
+        }, "Value", "Text");
+}*@
+
+
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+
+
+<div align="center">  
+    <h2>Billing Section</h2> @using (Html.BeginForm()) {  
+    <table> 
+        <tr>  
+            <th> Product Type</th>  
+            <td> 
+                @*@Html.DropDownList("ddlDropDownList", selectList, "Default label" , new  { @class = "css-class" })
+                <select asp-for="ProductType" id="ProductType" name="ProductType"  class="form-control" > </select>*@ 
+                <select asp-for="ProductType" name="ProductType" id="ProductType" class="form-control">  <option value="Seeds">Seeds</option>  <option value="Chemicals">Chemicals</option>  <option value="Fertilizers">Fertilizers</option></select>
+                <span asp-validation-for="ProductType" class="text-danger"></span>
+                <br />  
+                
+            </td>  
+            
+        </tr>
+        
+        <tr>  
+            <th> Product Name</th>  
+            <td> 
+                <input asp-for="ProductName" id="Price" name="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+                <br />
+            </td>  
+            
+        </tr>
+        <tr>  
+            <th> Quantity</th>  
+            <td> 
+                <input asp-for="Quantity" id="Quantity" name="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+                <br />
+            </td>  
+            <td>
+            
+        </tr>
+       
+        
+       @* <tr>  
+            <th> First Number</th>  
+            <td> <input type="text" id="txtFirstNumber" name="firstNumber" class="form-control" /> </td>  
+        </tr>  
+        <tr>  
+            <th> Last Number </th>  
+            <td> <input type="text" id="txtLastNumber" name="secondNumber" class="form-control" /> </td>  
+        </tr>*@  
+        <tr>  
+            <th>       <input type="submit" name="Add" value="Continue" class="btn btn-primary" />              <input type="submit" name="Add" value="Stop" class="btn btn-primary" /> </th>  
+            @*<th>  <input type="submit" name="Cal" value="Mul" class="btn btn-primary" />   <input type="submit" name="Cal" value="Div" class="btn btn-primary" /> </th>*@  
+        </tr> 
+        
+        <tr>
+            <th>
+                <td>
+                    <br />
+                </td>
+            </th>
+
+        </tr>
+
+        <tr>  
+            <th> Bill Amount</th>  
+            <td> 
+                <input type="text" class="form-control" value="@ViewBag.BillAmount" />
+                
+                <br />
+            </td>  
+            <td>
+            
+        </tr>
+
+
+
+
+        @*<tr>  
+            <td>
+
+            </td>
+            <th>Bill Amount </th>  
+            <td>
+                <input type="text" class="form-control" value="@ViewBag.BillAmount" />
+            </td>  
+        </tr>*@  
+    </table> } </div>
