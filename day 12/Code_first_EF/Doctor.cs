@@ -10,6 +10,7 @@ namespace Code_first_EF
     internal class Doctor
     {
         [Key]
+        [Display(Name ="Doctor ID")]
         public int DocID { get; set; }
         public string DocName { get; set; }
         public string Specialization { get; set; }

@@ -18,7 +18,7 @@ namespace Code_first_EF
             public static HospitalContext db = new HospitalContext();
             public static void Main()
             {
-                //DisplayDoctors();
+                DisplayDoctors();
                 //AddDoctors();
                 //DisplayDoctors();
                 //UpdateDoctors();

@@ -1,0 +1,2 @@
+C:\Users\Admin\Desktop\visual studio\console app\Sri_Arungarai_Amman_Traders\API\Fertilizers___Sri_Arungarai_Amman_Traders\Fertilizers___Sri_Arungarai_Amman_Traders\obj\Debug\net6.0\Fertilizers___Sri_Arungarai_Amman_Traders.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\visual studio\console app\Sri_Arungarai_Amman_Traders\API\Fertilizers___Sri_Arungarai_Amman_Traders\Fertilizers___Sri_Arungarai_Amman_Traders\obj\Debug\net6.0\Fertilizers___Sri_Arungarai_Amman_Traders.GeneratedMSBuildEditorConfig.editorconfig
